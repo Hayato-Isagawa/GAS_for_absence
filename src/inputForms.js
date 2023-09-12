@@ -1,7 +1,7 @@
 function inputForms() {
   // Googleフォームのhtmlを取得
   const html =
-    '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScqqGvyAO9UgiF2pf0ZBsiw1WHpxDHdF0UClsuSeMUEmAIPAQ/viewform?embedded=true" width="640" height="2262" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>';
+    '<iframe src="#your-google-form" width="640" height="2262" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>';
 
   // 取得したhtmlを安全な形に変換
   const htmlOutput = HtmlService.createHtmlOutput(html)
