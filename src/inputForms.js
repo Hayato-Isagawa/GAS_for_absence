@@ -1,13 +1,16 @@
 function inputForms() {
   // Googleフォームのhtmlを取得
-  var html = '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScqqGvyAO9UgiF2pf0ZBsiw1WHpxDHdF0UClsuSeMUEmAIPAQ/viewform?embedded=true" width="640" height="2262" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>'
-  
+  const html =
+    '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScqqGvyAO9UgiF2pf0ZBsiw1WHpxDHdF0UClsuSeMUEmAIPAQ/viewform?embedded=true" width="640" height="2262" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>';
+
   // 取得したhtmlを安全な形に変換
-  var htmlOutput = HtmlService.createHtmlOutput(html).setHeight(700).setWidth(650);
-  
+  const htmlOutput = HtmlService.createHtmlOutput(html)
+    .setHeight(700)
+    .setWidth(650);
+
   // 埋め込みたいスプレッドシートのUIを取得
-  var ui = SpreadsheetApp.getUi();
-  
+  const ui = SpreadsheetApp.getUi();
+
   // スプレッドシートに3パターンのいずれかで表示
   // １　埋め込んだフォームのみ操作可能
   // ui.showModalDialog(htmlOutput, '欠席・遅刻連絡');
